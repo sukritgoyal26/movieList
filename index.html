@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <title>MovieList</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sideNav">
+        <div class="logo"><img src="./Images/Logo.svg" alt="" /></div>
+        <div class="navContainer">
+          <div class="searchList hiddenList" id="searchList"></div>
+          <div class="searchbox">
+            <img src="./Images/Icon.svg" />
+            <input
+              type="text"
+              name="search"
+              placeholder="Search"
+              id="searchbox"
+              onkeyup="findMovies()"
+            />
+          </div>
+          <div class="navitems">
+            <div class="navItemCard active">
+              <img src="./Images/Iconsidenav.svg" alt="" />
+              <h1>Home</h1>
+            </div>
+            <div class="navItemCard">
+              <img src="./Images/Iconsidenav-1.svg" alt="" />
+              <h1>Library</h1>
+            </div>
+            <div class="navItemCard">
+              <img src="./Images/Iconsidenav-2.svg" alt="" />
+              <h1>Friends</h1>
+              <div class="number">1</div>
+            </div>
+          </div>
+          <div class="listcontent">
+            <h1>MY LISTS</h1>
+            <div class="list">
+              <div class="listcard">
+                <img src="./Images/Iconsidenav-3.svg" alt="" />
+                <h2>Action</h2>
+              </div>
+              <div class="listcard">
+                <img src="./Images/Iconsidenav-4.svg" alt="" />
+                <h2>Detectives</h2>
+              </div>
+              <div class="listcard">
+                <img src="./Images/Iconsidenav-5.svg" alt="" />
+                <h2>Fantasy</h2>
+              </div>
+              <div class="listcard">
+                <img src="./Images/Iconsidenav-6.svg" alt="" />
+                <h2>Space</h2>
+              </div>
+              <div class="listcard">
+                <img src="./Images/Iconsidenav-7.svg" alt="" />
+                <h2>Blockbasters</h2>
+              </div>
+              <div class="listcard">
+                <img src="./Images/Iconsidenav-8.svg" alt="" />
+                <h2>Shitty but I love it</h2>
+              </div>
+              <div class="listcard">
+                <img src="./Images/Iconsidenav-9.svg" alt="" />
+                <h2>My Top 100</h2>
+              </div>
+            </div>
+            <button>+ Create List</button>
+          </div>
+          <div class="user">
+            <div class="userid">
+              <img src="./Images/32sidenav.svg" alt="" />
+              <div class="name">
+                <h1>Chan Geme</h1>
+                <h2>@changeme</h2>
+              </div>
+            </div>
+            <span>...</span>
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="mainContent">
+          <div class="recent">
+            <div class="movieCard">
+              <div class="movieCardimg">
+                <img src="./Images/Movie Cover.svg" alt="" />
+              </div>
+              <h2>The Green Knight (2021)</h2>
+              <h3><img src="./Images/1.svg" alt="" /> FANTASY</h3>
+            </div>
+            <div class="movieCard">
+              <div class="movieCardimg">
+                <img src="./Images/Movie Cover.svg" alt="" />
+              </div>
+              <h2>The Green Knight (2021)</h2>
+              <h3><img src="./Images/1.svg" alt="" /> FANTASY</h3>
+            </div>
+            <div class="movieCard">
+              <div class="movieCardimg">
+                <img src="./Images/Movie Cover.svg" alt="" />
+              </div>
+              <h2>The Green Knight (2021)</h2>
+              <h3><img src="./Images/1.svg" alt="" /> FANTASY</h3>
+            </div>
+            <div class="movieCard movieCard-5">
+              <div class="movieCardimg">
+                <img src="./Images/Movie Cover.svg" alt="" />
+              </div>
+              <h2>The Green Knight (2021)</h2>
+              <h3><img src="./Images/1.svg" alt="" /> FANTASY</h3>
+            </div>
+            <div class="movieCard movieCard-5">
+              <div class="movieCardimg">
+                <img src="./Images/Movie Cover.svg" alt="" />
+              </div>
+              <h2>The Green Knight (2021)</h2>
+              <h3><img src="./Images/1.svg" alt="" /> FANTASY</h3>
+            </div>
+          </div>
+          <div class="movieNight">
+            <div class="movieNightCard">
+              <div class="movieNightCardimg">
+                <img src="./Images/Event Cover.svg" alt="" />
+              </div>
+              <h1>The Batman and Friends</h1>
+              <p>
+                <b>10:00 PM</b> Hi there! Me and Lex watching “The Batman”
+                tonight. Join us it will be totely fun))
+              </p>
+              <div class="movienightuser">
+                <img src="./Images/32.svg" alt="" />
+                <p>Elon Mask</p>
+              </div>
+              <button id="join" class="joinbtn marked">Yep, I'm in</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
