@@ -55,6 +55,7 @@ function addtorecent(){
             if(!recentMovies.includes(movie.dataset.id)){
                 if(recentMovies.length>=10){
                     recentMovies.pop();
+                    moviedets.pop();
                 }
                 const res = await fetch(`https://omdbapi.com/?i=${movie.dataset.id}&apikey=851bf538`);
                 const movres = await res.json();
