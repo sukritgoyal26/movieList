@@ -78,6 +78,9 @@ h1{
     object-fit: cover;
 
 }
+.NA .movieImg img{
+    width: 100%;
+}
 .movieName{
     font-size: 7px;
 }
@@ -195,7 +198,7 @@ margin-top: 32px;
     margin: 50px 80px;
     /* background-color: #0d0d0d; */
 }
-.recent h1{
+.recent{
     font-size: 13px;
     font-weight: 400;
     color: #9A9A9A;
@@ -218,11 +221,12 @@ margin-top: 32px;
 }
 .movieCardimg{
     overflow: hidden;
-    height: 304px;
-    width: 200px;
+    height: 200px;
+    width: 150px;
     border-radius: 8px;
 }
 .movieCardimg img{
+    object-fit: cover;
     width: 100%;
 }
 .movieCard h2{
