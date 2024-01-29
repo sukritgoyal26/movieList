@@ -241,6 +241,15 @@ margin-top: 32px;
     font-weight: 400;
     color: #808080;
 }
+.movieNight{
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+}
+.movieNight::-webkit-scrollbar{
+    display: none;
+}
+
 
 .movieNightCard{
     width: 416px;
@@ -292,6 +301,65 @@ margin-top: 32px;
 .marked{
     background-color: #EAEAEA;
     color: #333333;
+}
+
+.createMovieNight{
+    display: block flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* display: flex; */
+    height: 500px;
+    width: 500px;
+    border-radius: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+}
+.createMovienightContent{
+    display: flex;
+    /* position: absolute; */
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+} 
+.createMovieNight h2{
+    font-size: 30px;
+    color: #0d0d0d;
+}
+.createMovieNight input{
+    color: #0d0d0d;
+    width: 50%;
+    height: 25px;
+}
+
+.createMovieNight button{
+    width: 100px;
+    height: 25px;
+    border: none;
+    border-radius: 20px;
+    background-color: #F33F3F;
+    /* color: #0d0d0d; */
+}
+.createMovieNightimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 50%;
+}
+
+.createMovieNightimg img{
+    object-fit: contain ;
+    height: 100%;
+}
+.inactiveMovieNight{
+    display: none;
 }
 
 
