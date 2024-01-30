@@ -158,15 +158,26 @@ function addMovie(){
         if(movie.Title===movname){
             console.log("hello i found it");
             // if(movienightdata.includes(''))
-            movienightdata.push(`<div class="movieNightCard"><div class="movieNightCardimg"><img src=${movie.Poster!="N/A"?movie.Poster:"./Images/image-not-found-icon.svg"} alt="" />
-            </div><h1>${movie.Title}</h1><p><b>${document.getElementById("time").value}</b>${document.getElementById("desc").value}</p>
-            <div class="movienightuser">
-              <img src="./Images/32.svg" alt="" />
-              <p>Elon Mask</p>
-            </div>
-            <button id="join" class="joinbtn marked">Yep, I'm in</button>
-            </div>`)
-            movienight();
+            if(document.getElementById("desc").value.length ==0){
+                alert("Failed! please add Description");
+
+            }else if(document.getElementById("time").value==0){
+                alert("Failed! please add Time");
+
+            }
+            else{
+                movienightdata.push(`<div class="movieNightCard"><div class="movieNightCardimg"><img src=${movie.Poster!="N/A"?movie.Poster:"./Images/image-not-found-icon.svg"} alt="" />
+                </div><h1>${movie.Title}</h1><p><b>${document.getElementById("time").value}</b>${document.getElementById("desc").value}</p>
+                <div class="movienightuser">
+                  <img src="./Images/32.svg" alt="" />
+                  <p>Elon Mask</p>
+                </div>
+                <button id="join" class="joinbtn marked">Yep, I'm in</button>
+                </div>`)
+                movienight();
+
+            }
+
         }
 
 

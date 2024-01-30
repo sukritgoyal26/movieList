@@ -362,6 +362,10 @@ margin-top: 32px;
     display: none;
 }
 
+.mobile-nav{
+    display: none;
+}
+
 
 @media only screen and (max-width:1200px) {
     .sideNav{
@@ -386,15 +390,88 @@ margin-top: 32px;
     /* .movieCard-5{
         display: none;
     } */
+    .user{
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width:640px) {
+    .container{
+        overflow-y: auto;
+    }
+    .container::-webkit-scrollbar{
+        display: none;
+    }
     .sideNav{
-       display: none;
+        height: 150px;
+        display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       width: 100%;
+    }
+    .searchListItem{
+        border-bottom: 0.5px solid black;
+        gap: 10px;
+        margin-left: 5px;
+        width: 95%;
+    }
+    .listcontent{
+        display: none;
+    }
+    .user{
+        display: none;
     }
     .main{
         width:100%;
     }
+    .container{
+        flex-direction: column;
+    }
 
+    .navitems{
+        display: none;
+    }
+    .logo img{
+        margin: 40px 0  0 10px;
+    }
+    .searchList{
+        width: 200px;
 
+        right: 5px;
+    }
+    .mainContent{
+        margin: 10px;
+    }
+    .movieCard{
+        width: 150px;
+    }
+    .movieCard h2{
+        margin-top:5px ;
+    }
+    .recent{
+        font-weight: 700;
+        font-size: 18px;
+    }
+    .movieNightCard{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 200px;
+        height: 300px;
+    }
+    .movieNightCardimg{
+        display: flex;
+        justify-content: center;
+        border-radius: 8px;
+        height: 150px;
+        width: 200px;
+    }
+    .movieNightCardimg img{
+        /* width: 100%; */
+        object-fit: cover;
+        height: 100%;
+    }  
+    .movieNight{
+        margin-bottom: 20px;
+    }
 }
