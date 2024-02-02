@@ -75,6 +75,8 @@ function addtorecent(){
     const searchListmovies = searchList.querySelectorAll('.searchListItem');
     searchListmovies.forEach(movie=>{
         movie.addEventListener('click',async()=>{
+            searchList.classList.add("hiddenList");
+            searchBox.value="";
             if(!recentMovies.includes(movie.dataset.id)){
                 if(recentMovies.length>=10){
                     recentMovies.pop();
